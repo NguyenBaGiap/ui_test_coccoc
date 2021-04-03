@@ -142,4 +142,8 @@
   .tab {
     width: 50%;
   }
+  .card-custom:hover {
+    z-index: 999;
+    transform: unset;
+  }
 }
