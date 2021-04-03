@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 function BasicPagination(props) {
-  const { handleChangePage, pageIndex, totalPages } = props;
+  const { handleChangePage, totalPages } = props;
   const classes = useStyles();
   const [page, setPage] = React.useState(1);
   const handleChange = (event, value) => {
