@@ -116,3 +116,11 @@ footer
 .social-ul-mobile > li {
   margin-right: 10px;
 }
+.copyright-content-mobile {
+  color: #6e7171;
+  font-family: SVN-Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}

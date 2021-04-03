@@ -99,7 +99,7 @@ export default class AppFooter extends React.Component {
             </ul>
           </div>
           <div className={'divide-line-footer'} />
-          <div className={'copyright-content-mobile'}>
+          <div className={'copyright-content-mobile pt-3 pb-2'}>
             © 2021. Bản quyền thuộc về Công ty TNHH Cốc Cốc.
           </div>
         </div>
