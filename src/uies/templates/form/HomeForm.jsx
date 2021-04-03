@@ -9,6 +9,7 @@ const validate = (values) => {
 
 const HomeForm = (props) => {
   const {
+    totalGift,
     findAll,
     findByVoucher,
     findByCardMobile,
@@ -25,7 +26,7 @@ const HomeForm = (props) => {
               type="checkbox"
               component={SimpleField}
               onChange={findAll}
-              label="Tất cả (120)"
+              label={`Tất cả (${totalGift})`}
             />
             <Field
               name="voucher"

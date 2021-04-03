@@ -5,13 +5,18 @@ import * as giftsAction from 'redux/actions/giftsAction';
 const mapStateToProps = (state) => ({
   initialValues: state.giftsReducer.initialValuesForm,
   gifts: state.giftsReducer.gifts,
-  giftsIndex: 1,
-  totalGifts: state.giftsReducer.totalGifts,
+  giftPageList: state.giftsReducer.giftPageList,
+  giftsIndex: state.giftsReducer.giftsIndex,
+  totalPageGift: state.giftsReducer.totalPageGift,
+  totalGift: state.giftsReducer.totalGift,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   fetchGifts: async (params) => {
     await dispatch(giftsAction.fetchGiftsRequest(params));
+  },
+  handleChangePage: async (pageIndex) => {
+    await dispatch(giftsAction.onChangePageGifts(pageIndex));
   },
 });
 

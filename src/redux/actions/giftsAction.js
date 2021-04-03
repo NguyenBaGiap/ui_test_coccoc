@@ -1,12 +1,16 @@
-import * as actionTypes from 'redux/actions/actionTypes';
-import { GiftsRequestClient } from 'services/giftsRequestClient';
-import * as restApiAction from 'redux/actions/restApiAction';
+import * as actionTypes from "redux/actions/actionTypes";
+import { GiftsRequestClient } from "services/giftsRequestClient";
+import * as restApiAction from "redux/actions/restApiAction";
 
 const giftsRequestClient = new GiftsRequestClient();
 
 export const fetchGifts = (data) => ({
   type: actionTypes.FETCH_GIFTS,
   payload: data,
+});
+export const onChangePageGifts = (pageIndex) => ({
+  type: actionTypes.ON_CHANGE_PAGE_GIFT,
+  payload: pageIndex,
 });
 
 export const fetchGiftsRequest = (param) => {
@@ -17,10 +21,10 @@ export const fetchGiftsRequest = (param) => {
       dispatch(fetchGifts(response));
       dispatch(restApiAction.genRequestLoadingAction());
     } catch (e) {
-      console.log('error fetch: ', e);
+      console.log("error fetch: ", e);
     } finally {
       dispatch(restApiAction.genRequestFinishAction());
-      console.log(' end fetchGifts');
+      console.log(" end fetchGifts");
     }
   };
 };
