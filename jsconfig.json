@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es6",
+      "es2017"
+    ],
+    "target": "es2017",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "paths": {
+      "redux/*": ["src/redux/*"],
+      "services/*": ["src/services/*"],
+      "uies/*": ["src/uies/*"],
+      "static/*": ["src/static/*"],
+      "utilities/*": ["src/utilities/*"],
+      "helpers/*": ["src/helpers/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
