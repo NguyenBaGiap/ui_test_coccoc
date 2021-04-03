@@ -1,7 +1,7 @@
-import * as actionTypes from 'redux/actions/actionTypes';
-import { HOME_SORT_BY } from 'utilities/Constants';
-import { IS_MOBILE, GIFT_SHOW_PAGE } from 'utilities/Ui';
-import { generateSubTitleCard, requiredPointFormat } from 'utilities/Ui';
+import * as actionTypes from "redux/actions/actionTypes";
+import { HOME_SORT_BY } from "utilities/Constants";
+import { GIFT_SHOW_PAGE } from "utilities/Ui";
+import { generateSubTitleCard, requiredPointFormat } from "utilities/Ui";
 
 const initialState = {
   initialValuesForm: {

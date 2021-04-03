@@ -1,6 +1,6 @@
-import * as actionTypes from "redux/actions/actionTypes";
-import { GiftsRequestClient } from "services/giftsRequestClient";
-import * as restApiAction from "redux/actions/restApiAction";
+import * as actionTypes from 'redux/actions/actionTypes';
+import { GiftsRequestClient } from 'services/giftsRequestClient';
+import * as restApiAction from 'redux/actions/restApiAction';
 
 const giftsRequestClient = new GiftsRequestClient();
 
@@ -21,10 +21,9 @@ export const fetchGiftsRequest = (param) => {
       dispatch(fetchGifts(response));
       dispatch(restApiAction.genRequestLoadingAction());
     } catch (e) {
-      console.log("error fetch: ", e);
+      dispatch(restApiAction.genRequestFinishAction());
     } finally {
       dispatch(restApiAction.genRequestFinishAction());
-      console.log(" end fetchGifts");
     }
   };
 };

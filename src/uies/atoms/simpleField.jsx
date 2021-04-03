@@ -1,5 +1,6 @@
 import * as React from 'react';
 import 'helpers/filedStyle.css';
+import classNames from 'classnames';
 
 const SimpleField = (props) => {
   const {
@@ -17,7 +18,7 @@ const SimpleField = (props) => {
             ((error && <span>{error}</span>) ||
               (warning && <span>{warning}</span>))}
         </div>
-        <label className={'field-label'}>{label}</label>
+        <label className={classNames('field-label')}>{label}</label>
       </div>
     </React.Fragment>
   );

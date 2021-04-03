@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import SimpleField from 'uies/atoms/simpleField';
+import { HOME_FORM_FILTER } from 'utilities/Constants';
 
 const validate = (values) => {
   const errors = {};
@@ -67,7 +68,7 @@ const HomeForm = (props) => {
   );
 };
 export default reduxForm({
-  form: 'homeForm',
+  form: HOME_FORM_FILTER,
   enableReinitialize: true,
   validate,
 })(HomeForm);

@@ -8,6 +8,9 @@ class AppContainer extends React.Component {
       <React.Fragment>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/point-bonus" component={Home} />
+          <Route exact path="/ranks" component={Home} />
+          <Route exact path="/questions" component={Home} />
         </Switch>
       </React.Fragment>
     );
