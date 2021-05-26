@@ -11,15 +11,15 @@ import './index.css';
 const App = withRouter(AppContainer);
 
 const store = configureStore();
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <React.Fragment>
-          <App />
-        </React.Fragment>
-      </ConnectedRouter>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+        ReactDOM.render(
+          <React.StrictMode>
+            <Provider store={store}>
+              <ConnectedRouter history={history}>
+                <React.Fragment>
+                  <App />
+                </React.Fragment>
+              </ConnectedRouter>
+            </Provider>
+          </React.StrictMode>,
+          document.getElementById('root')
+        );
